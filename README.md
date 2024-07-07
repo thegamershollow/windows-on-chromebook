@@ -25,6 +25,8 @@ A guide to installing windows on a Lenove 100e gen2 ast chromebook (for archive 
 8. [Touchpad Drivers](https://github.com/coolstar/driverinstallers/raw/master/crostouchpad/crostouchpad.4.1.6-installer.exe)
 9. [Touchscreen Drivers](https://github.com/coolstar/driverinstallers/raw/master/crostouchscreen/crostouchscreen.2.9.5-installer.exe)
 10. [Audio Drivers](https://github.com/coolstar/driverinstallers/raw/master/csaudioacp2x/csaudioacp2x.1.0.0-installer.exe)
+11. [7Zip](https://www.7-zip.org/download.html)
+12. [Supermium](https://win32subsystem.live/supermium/)
 
 ## Getting Started
 
@@ -34,16 +36,68 @@ This guide will show you how to go from chromeOS to Windows 11, you will need an
 
 Let's Get Started!
 
-### Jailbreaking the Chromebook
+## Jailbreaking the Chromebook
 
-#### Step 1
-Enter your Chromebook into developer mode. Esc + Refresh + Power, then Control + D.
+### Step 1: Disable Hardware Write Protection
 
+Open up the bottom of your Chromebook and disconnect the battery, then plug it into the charger, when you power it on the power light should blink.
 
+### Step 2: Entering your Chromebook into Dev Mode
+Press Esc + Refresh + Power.
+![Press Esc+Reset+Power to restart](https://github.com/thegamershollow/windows-on-chromebook/blob/main/images/Press-Esc-Refresh-Power-to-restart-1024x576.jpg.png?raw=true)
 
-### Installing Ventoy on a USB/SD Card and Copying the Tiny 11 Installer to the Drive
+Press Control+D to enter Developer Mode.
+![Hit Control+D to enter dev mode](https://github.com/thegamershollow/windows-on-chromebook/blob/main/images/Hit-Ctrl-D-on-the-next-screen-1024x576.jpg.png?raw=true)
 
-Download the appropriate installer for your os, if you are on Mac OS you will need to download the ISO file and use that instead.
+Press enter when it asks to turn OS verification off.
+![Press enter when it asks to turn os verification off](https://github.com/thegamershollow/windows-on-chromebook/blob/main/images/Press-Enter-when-it-asks-if-you-want-to-turn-off-OS-verification-1024x576.jpg.png?raw=true)
 
-After Ventoy is installed download the Tiny 11 ISO and copy it to the root of the 'Ventoy' volume.
+After it restarts press Control + D again.
+![press control+d again](https://github.com/thegamershollow/windows-on-chromebook/blob/main/images/After-it-restarts-press-Ctrl-D-again-1024x576.jpg.png?raw=true)
+
+Wait until it boots into Developer Mode.
+![wait until it boots into developer mode](https://github.com/thegamershollow/windows-on-chromebook/blob/main/images/Wait-a-bit-until-it-switches-to-Developer-Mode-1024x576.jpg.png?raw=true)
+
+### Step 3: Install New Firmware
+
+Connect your Chromebook to the internet, but do not setup dev mode
+
+Press Control + Alt + Back Arrow 
+
+Then run ```cd; curl -LO mrchromebox.tech/firmware-util.sh && sudo bash firmware-util.sh```
+![Firmware util screen](https://github.com/thegamershollow/windows-on-chromebook/blob/main/images/fwutil_cros_wp-on.png?raw=true)
+
+Then type 2 on the keyboard. follow the instructions on the screen
+
+after that you are succesfully Jailbroken
+
+## Installing Windows 11
+
+### Step 1: Installing Ventoy onto a USB/SD Card
+
+Download the appropriate installer for your OS, if you are on Mac OS you will need to download the ISO file and use that instead.
+
+### Step 2: Copying Tiny 11 iso to 'Ventoy' SD/USB
+
+Download the Tiny 11 iso and copy it to your 'Ventoy' SD/USB
+
+### Step 3: Copying the drivers to a folder on the Ventoy drive
+
+Download all the drivers, 7ZIP and Supermium.
+
+Copy the drivers and other files to a folder on your 'Ventoy' USB/SD 
+
+### Step 4: Installing Windows 11
+
+Insert the sd/usb into the chromebook 
+
+Then turn on the chromebook and continualy press the escape key, till you get to a bios screen.
+
+Then using the arrow keys go down to the ```boot menu``` option
+
+You should see USB or SD Device in the menu
+
+Boot into that and it should show the ventoy menu
+
+Boot
 
