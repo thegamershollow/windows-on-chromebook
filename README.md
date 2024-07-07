@@ -30,7 +30,7 @@ A guide to installing windows on a Lenove 100e gen2 ast chromebook (for archive 
 
 #### An Overview
 
-This guide will show you how to go from chromeOS to Windows 11, you will need an internet connection for the chromebook, and also the other requirements listed [above](https://github.com/thegamershollow/windows-on-chromebook/edit/main/README.md#Downloads)
+This guide will show you how to go from chromeOS to Windows 11, you will need an internet connection for the chromebook, and also the other requirements listed [above](https://github.com/thegamershollow/windows-on-chromebook/README.md#downloads)
 
 Let's Get Started!
 
