@@ -36,6 +36,11 @@ Let's Get Started!
 
 ### Jailbreaking the Chromebook
 
+#### Step 1
+Enter your Chromebook into developer mode. Esc + Refresh + Power, then Control + D.
+
+
+
 ### Installing Ventoy on a USB/SD Card and Copying the Tiny 11 Installer to the Drive
 
 Download the appropriate installer for your os, if you are on Mac OS you will need to download the ISO file and use that instead.
