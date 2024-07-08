@@ -44,32 +44,38 @@ Open up the bottom of your Chromebook and disconnect the battery, then plug it i
 
 ### Step 2: Entering your Chromebook into Dev Mode
 Press Esc + Refresh + Power.
-![Press Esc+Reset+Power to restart](https://github.com/thegamershollow/windows-on-chromebook/blob/main/images/Press-Esc-Refresh-Power-to-restart-1024x576.jpg.png?raw=true)
 
 Press Control+D to enter Developer Mode.
-![Hit Control+D to enter dev mode](https://github.com/thegamershollow/windows-on-chromebook/blob/main/images/Hit-Ctrl-D-on-the-next-screen-1024x576.jpg.png?raw=true)
 
 Press enter when it asks to turn OS verification off.
-![Press enter when it asks to turn os verification off](https://github.com/thegamershollow/windows-on-chromebook/blob/main/images/Press-Enter-when-it-asks-if-you-want-to-turn-off-OS-verification-1024x576.jpg.png?raw=true)
 
 After it restarts press Control + D again.
-![press control+d again](https://github.com/thegamershollow/windows-on-chromebook/blob/main/images/After-it-restarts-press-Ctrl-D-again-1024x576.jpg.png?raw=true)
 
 Wait until it boots into Developer Mode.
-![wait until it boots into developer mode](https://github.com/thegamershollow/windows-on-chromebook/blob/main/images/Wait-a-bit-until-it-switches-to-Developer-Mode-1024x576.jpg.png?raw=true)
 
 ### Step 3: Install New Firmware
 
 Connect your Chromebook to the internet, but do not setup dev mode
 
-Press Control + Alt + Back Arrow 
+Press Control + Alt + Forward Arrow
+
+When you get to a prompt saying ```localhost login: ``` login as ```chronos```
+
+**! Make sure you have internet enabled already or the following step won't work. !**
 
 Then run ```cd; curl -LO mrchromebox.tech/firmware-util.sh && sudo bash firmware-util.sh```
-![Firmware util screen](https://github.com/thegamershollow/windows-on-chromebook/blob/main/images/fwutil_cros_wp-on.png?raw=true)
 
-Then type 2 on the keyboard. follow the instructions on the screen
+follow the instruction on screen, it may reboot once if it does do the above step again.
 
-after that you are succesfully Jailbroken
+Then type 2 on the keyboard, and follow the instructions on the screen
+
+after that you are succesfully Jailbroken.
+
+### Step 4: Button up the computer
+
+reconnect the battery and close up the laptop.
+
+replug the laptop in or it might not turn on.
 
 ## Installing Windows 11
 
@@ -87,7 +93,7 @@ Download all the drivers, 7ZIP and Supermium.
 
 Copy the drivers and other files to a folder on your 'Ventoy' USB/SD 
 
-### Step 4: Installing Windows 11
+### Step 4: Booting the installer
 
 Insert the sd/usb into the chromebook 
 
@@ -99,5 +105,44 @@ You should see USB or SD Device in the menu
 
 Boot into that and it should show the ventoy menu
 
-Boot
+Boot into the Tiny 11 iso and wait for it to show the setup screen.
 
+**You will need to have a USB mouse plugged in to continue with the windows setup**
+
+### Step 5: Deleting the old chromeos partitions
+
+You will need to delete the chrome os partitions in order to install windows
+
+### Step 6: Post Install Setup
+
+Setup a **LOCAL** user account **! Do not sign in with a microsoft account as it will remove the automatic activation of Tiny 11 !**
+
+Install all of the drivers that you downloaded **EXCEPT FOR THE GRAPHICS DRIVER**
+
+### Step 7: Installing the GPU driver
+
+Open cmd
+
+type ```bcdedit -set testsigning on```
+
+restart windows
+
+**Make sure you downloaded version 21.5.2 of the gpu driver! But don't install yet!**
+
+Double click the exe and click the first install (with destination folder). But Don't click install on any further installation wizards.
+
+Wait for the driver to extract
+
+Extract and copy the patched ```amdkmdag.sys``` to ```C:\AMD\Radeon-Software-Adrenalin-2020-21.5.2-Win10-64Bit-LegacyASICs-June21-LEGACY\Packages\Drivers\Display\WT6A_INF\B367348\amdkmdag.sys```
+
+Proceed with the driver installation. Windows may ask you about installing an unsigned driver. Click "Allow"
+
+Reboot. So long as testsigning is enabled, GPU should work and start immediately
+
+### Step 8: Finishing up
+
+install Supermium and 7ZIP if you haven't already.
+
+now you are done !!! 
+
+***ENJOY***
