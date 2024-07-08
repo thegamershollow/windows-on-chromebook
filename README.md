@@ -20,7 +20,7 @@ A guide to installing windows on a Lenove 100e gen2 ast chromebook (for archive 
 3. [Visual C++ Redist](https://aka.ms/vs/17/release/vc_redist.x64.exe)
 4. [CR50 TPM Driver](https://github.com/coolstar/driverinstallers/raw/master/cr50/cr50.1.0.1-installer.exe)
 5. [Chrome EC Driver](https://github.com/coolstar/driverinstallers/raw/master/crosec/crosec.2.0.6-installer.exe)
-6. [Radeon GPU Drivers](https://drivers.amd.com/drivers/radeon-software-adrenalin-2020-21.5.2-win10-64bit-legacyasics-june21-legacy.exe) **!!DO NOT INSTALL UNTIL READING THE GUIDE!!**
+6. [Radeon GPU Drivers](https://www.amd.com/en/resources/support-articles/release-notes/RN-RAD-WIN-21-5-2.html) **!!DO NOT INSTALL UNTIL READING THE GUIDE!!**
 7. [Radeon GPU Driver Patch](https://coolstar.org/chromebook/downloads/drivers/stoney-amdkmdag-patch.zip)
 8. [Touchpad Drivers](https://github.com/coolstar/driverinstallers/raw/master/crostouchpad/crostouchpad.4.1.6-installer.exe)
 9. [Touchscreen Drivers](https://github.com/coolstar/driverinstallers/raw/master/crostouchscreen/crostouchscreen.2.9.5-installer.exe)
